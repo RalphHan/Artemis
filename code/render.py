@@ -170,7 +170,7 @@ else:
                                                     vb_indices=joint_index, radius=volume_radius,
                                                     max_depth=tree_depth)
                 # cache the tree for faster rendering if gpu memory is enough
-                # seq_trees[seq_id][frame_id] = t 
+                seq_trees[seq_id][frame_id] = t
             else:
                 t = seq_trees[seq_id][frame_id]
                 
